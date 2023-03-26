@@ -22,7 +22,8 @@ The main function `dijkstra(graph, start, end)` takes a graph, a starting node, 
 ### Example
 
 The following graph represents the walking distances between the junctions connecting the two famous tourist attractions, Frauenkirche and Marienplatz, in Munich, Germany.
-![Frauenkirche to Marienplatz Graph Example!](Frauenkirche to Marienplatz Graph Example.png)
+
+![example graph](https://github.com/jacobvoss/dijkstra/blob/main/Frauenkirche%20to%20Marienplatz%20Graph%20Example.png?raw=true)
 
 ```python
 from dijkstra import dijkstra
@@ -49,3 +50,8 @@ end = 'M'
 shortest_path = dijkstra(graph, start, end)
 
 print(f"The shortest path from {start} to {end} is: {shortest_path}")
+```
+Output:
+`
+The shortest path from A to M is: ['A', 'B', 'I', 'G', 'L', 'M']
+`
